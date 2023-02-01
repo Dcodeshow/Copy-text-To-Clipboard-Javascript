@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="form-wrap">
+      <div class="form-group">
+        <input type="text" value="www.google.com" class="copytext" />
+        <img src="images/copy.svg" class="clicktocopy" alt="" />
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".clicktocopy");
+      btn.addEventListener("click", function () {
+        let copy = document.querySelector(".copytext");
+        copy.select();
+        //copy Command
+        document.execCommand("copy");
+      });
+      //Youtube
+    </script>
+  </body>
+</html>
